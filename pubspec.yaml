@@ -71,6 +71,7 @@ flutter:
      - assets/specs.jpg
      - assets/valley.jpg
      - assets/instagram-icon.png
+     - assets/girl.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
@@ -92,6 +93,10 @@ flutter:
      - family: PatrickHand
        fonts:
          - asset: fonts/PatrickHand-Regular.ttf
+
+     - family: GreatVibes
+       fonts:
+         - asset: fonts/GreatVibes-Regular.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #

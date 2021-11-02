@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './explore.dart';
 
 class Search extends StatelessWidget {
   const Search({Key? key}) : super(key: key);
@@ -9,22 +10,31 @@ class Search extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        title:Container(
-          padding: EdgeInsets.all(8),
-          color:Colors.grey[400],
-          child:Row(
-            children:[
-              Icon(Icons.search),
-              Container(
-                child: Text('Search'),
-              )
-            ]
-          )
-        )
-      ),
+        title:ClipRRect(
+          borderRadius:BorderRadius.circular(8),
+          child: Container(
+            padding: EdgeInsets.all(8),
+            color:Colors.grey[300],
+              child: Row(
+                children:[
+                  Icon(Icons.search),
+                  Container(
+                    child:Text(
+                      'Search',
+                      style:TextStyle(
+                        color:Colors.grey[500],),
+                    )
+                  ),
 
-      body:Center(child:
-      Text('Search'))
-    );
+                ],
+              ),
+            ),
+        ),
+      ),
+        body:ExploreGrid(),
+      );
+
+
+
   }
 }

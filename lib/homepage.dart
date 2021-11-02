@@ -2,7 +2,6 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import './homepage.dart';
 import './loginScreen.dart';
 import './feed.dart';
 import './search.dart';
@@ -29,17 +28,20 @@ class _feedState extends State<feed> {
   }
 
   final List<Widget> _children =[
-    // Login(),
-    Feed(),
-    // Search(),
-    // Reels(),
-    // Activity(),
-    // Profile(),
+      Login(),
+      Feed(),
+      Search(),
+     Reels(),
+    Activity(),
+    Profile(),
   ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body:_children[_selectedIndex],
+      body:PageView(
+        children:_children ,
+
+      ),
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: _selectedIndex,
           onTap: _navigateBottomBar,

@@ -5,6 +5,11 @@ import './homepage.dart';
 import './splashscreen.dart';
 import './homepage.dart';
 import './Circle/user_posts.dart';
+import './profile.dart';
+import './search.dart';
+import './feed.dart';
+import './reels.dart';
+import './activity.dart';
 
 void main(){
   runApp(MyApp());
@@ -17,7 +22,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner:false,
-        home: Login(),
+        home: Profile(),
+      routes:{
+          './feed':(context)=> Feed(),
+        './search':(context)=> Search(),
+        './reels':(context)=> Reels(),
+        './activity':(context)=> Activity(),
+        './profile':(context)=> Profile(),
+      }
     );
   }
 }

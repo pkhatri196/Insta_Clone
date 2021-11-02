@@ -64,9 +64,8 @@ class _LoginState extends State<Login> {
                                 // },
                               ),
                             ) ,
-
-                    SizedBox(height: 40),
-                      Container(
+                     SizedBox(height: 40),
+                     Container(
                         width: 100,
                           child: RaisedButton(
                             onPressed: () {
@@ -97,22 +96,20 @@ class _LoginState extends State<Login> {
                             Text('Sign up',
                               style:TextStyle(
                                 fontWeight: FontWeight.bold,
-                                color:Colors.blueAccent,
+                                  color:Color(0xff123456),
                               ),
                             )
                           ]
                         )
 
-                    )
+                    ),
+                 ],
+                      ),
+                    ),
 
+                    ),
 
-
-              ],),
-
-        ),
-    ),
-    );
-
+        );
 
 
 
